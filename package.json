@@ -1,0 +1,28 @@
+{
+  "name": "animal-search",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "material-ui": "^0.19.1",
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.31.2",
+    "react-dom": "^15.6.1",
+    "react-grid-gallery": "^0.4.2",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "next",
+    "react-scripts": "1.0.12",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.15.6"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PATH=src react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env NODE_PATH=src react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.5"
+  }
+}

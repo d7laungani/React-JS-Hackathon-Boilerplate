@@ -1,0 +1,27 @@
+.search-row {
+    padding:20px 0px;
+    background-color: #eee;
+}
+
+.search-container {
+    width:80%;
+    margin: 0 auto;
+}
+.search-col {
+    width:80%;
+    margin: 0 auto;
+}
+
+.search-input {
+    display:inline;
+    width: calc(100% - 91px);
+    max-height: 33px;
+}
+
+.search-button {
+    display:inline;
+    margin-left:10px;
+}
+.search-col>.btn {
+    vertical-align: baseline;
+}
