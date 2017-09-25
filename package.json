@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "history": "^4.7.2",
     "material-ui": "^0.19.1",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.2",
