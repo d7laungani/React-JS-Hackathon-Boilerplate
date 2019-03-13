@@ -1,24 +1,45 @@
 import React, {Component} from 'react';
-import AutoComplete from 'material-ui/AutoComplete';
+import TextField from '@material-ui/core/TextField';
 
 import './search.css'
 
 
 
 export default class SearchBar extends Component {
-    state = {
-        dataSource: [],
-    };
+
+
+    constructor (props) {
+        super(props)
+
+
+        this.state = {
+            searchQuery: '',
+        }
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(event) {
+
+        var query = event.target.value
+        this.setState({searchQuery: query })
+
+        if (query == '') {
+            query = 'fish'
+        }
+        this.props.searchFunction(query )
+    }
 
     render() {
         return (
             <div >
-                <AutoComplete
-                    hintText="Zion National Park"
-                    dataSource={this.state.dataSource}
-                    onUpdateInput={this.props.searchFunction}
-                    floatingLabelText="Search Flikr Images"
-                    fullWidth={true}
+
+                <TextField
+                    id="standard-name"
+                    label="Name"
+                    value={this.state.searchQuery}
+                    onChange={this.handleChange}
+                    margin="normal"
+                    style={{width: '80%'}}
                 />
             </div>
         );
